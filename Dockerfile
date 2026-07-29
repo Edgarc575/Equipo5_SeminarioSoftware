@@ -1,19 +1,15 @@
-FROM php:8.4-apache
+FROM php:8.4-cli
 
-RUN docker-php-ext-install pdo pdo_mysql mysqli
-
-RUN a2enmod rewrite
+RUN docker-php-ext-install pdo_mysql mysqli
 
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
-WORKDIR /var/www/html
+WORKDIR /app
 
-COPY . .
+COPY . /app
 
 RUN composer install --no-dev --optimize-autoloader
 
-RUN chown -R www-data:www-data /var/www/html
+EXPOSE 8080
 
-EXPOSE 80
-
-CMD ["apache2-foreground"]
+CMD ["sh", "-c", "php -S 0.0.0.0:${PORT:-8080} -t /app"]

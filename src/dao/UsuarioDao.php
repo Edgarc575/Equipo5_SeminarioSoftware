@@ -2,7 +2,7 @@
 
 namespace Dao;
 
-require_once __DIR__ . "/Dao.php";
+require_once __DIR__ . "/dao.php";
 require_once __DIR__ . "/Table.php";
 
 class UsuarioDao extends Table

@@ -25,7 +25,7 @@ Tecnologías Utilizadas
 
 Estructura del Proyecto
 
-Equipo5_SeminarioSoftware/
+delivery_app/
 │
 ├── database/
 │
@@ -257,11 +257,11 @@ Instalación del Proyecto
 
 1. Clonar el repositorio
 
-git clone https://github.com/JRAMOS11/Equipo5_SeminarioSoftware.git
+git clone https://github.com/JRAMOS11/delivery_app.git
 
 2. Ingresar al proyecto
 
-cd Equipo5_SeminarioSoftware
+cd delivery_app
 
 3. Instalar dependencias
 
@@ -293,7 +293,7 @@ DB_PSWD =
 DB_DATABASE = seguimiento_academico
 DB_PORT = 3306
 TIMEZONE = America/Tegucigalpa
-BASE_DIR = NWEB/Equipo5_SeminarioSoftware/
+BASE_DIR = NWEB/delivery_app/
 DEVELOPMENT = 1
 
 ⸻
@@ -304,11 +304,11 @@ Iniciar Apache y MySQL desde XAMPP.
 
 Luego abrir:
 
-http://localhost/NWEB/Equipo5_SeminarioSoftware/
+http://localhost/NWEB/delivery_app/
 
 o
 
-http://localhost/Equipo5_SeminarioSoftware/
+http://localhost/Equipo5_delivery_app/
 
 dependiendo de la ubicación del proyecto.
 
